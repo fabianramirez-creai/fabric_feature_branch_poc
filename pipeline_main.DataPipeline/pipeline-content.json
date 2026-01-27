@@ -8,6 +8,21 @@
         "typeProperties": {
           "waitTimeInSeconds": 1
         }
+      },
+      {
+        "name": "silver",
+        "type": "Wait",
+        "dependsOn": [
+          {
+            "activity": "bronze",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "waitTimeInSeconds": 1
+        }
       }
     ]
   }
