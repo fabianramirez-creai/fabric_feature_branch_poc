@@ -1,0 +1,14 @@
+{
+  "properties": {
+    "activities": [
+      {
+        "name": "bronze",
+        "type": "Wait",
+        "dependsOn": [],
+        "typeProperties": {
+          "waitTimeInSeconds": 1
+        }
+      }
+    ]
+  }
+}
