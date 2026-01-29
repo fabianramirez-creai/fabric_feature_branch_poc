@@ -23,6 +23,21 @@
         "typeProperties": {
           "waitTimeInSeconds": 1
         }
+      },
+      {
+        "name": "gold",
+        "type": "Wait",
+        "dependsOn": [
+          {
+            "activity": "silver",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "waitTimeInSeconds": 1
+        }
       }
     ]
   }
