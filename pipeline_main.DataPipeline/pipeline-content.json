@@ -38,6 +38,21 @@
         "typeProperties": {
           "waitTimeInSeconds": 1
         }
+      },
+      {
+        "name": "validations",
+        "type": "Wait",
+        "dependsOn": [
+          {
+            "activity": "gold",
+            "dependencyConditions": [
+              "Succeeded"
+            ]
+          }
+        ],
+        "typeProperties": {
+          "waitTimeInSeconds": 1
+        }
       }
     ]
   }
